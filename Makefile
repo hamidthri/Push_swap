@@ -6,7 +6,7 @@
 #    By: htaheri <htaheri@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/06/28 12:47:36 by htaheri           #+#    #+#              #
-#    Updated: 2023/07/29 16:29:51 by htaheri          ###   ########.fr        #
+#    Updated: 2023/08/01 11:44:12 by htaheri          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,8 +39,8 @@ $(NAME): $(LIBFT) $(PRINTF) $(OBJS)
 	$(CC) $(CFLAGS) -I./leak_finder/includes  -c $< -o $@
 
 clean:
-	$(MAKE) -C $(LIBFT_DIR) fclean
-	$(MAKE) -C $(PRINTF_DIR) fclean
+	$(MAKE) -C $(LIBFT_DIR) clean
+	$(MAKE) -C $(PRINTF_DIR) clean
 	$(RM) $(OBJS)
 
 fclean: clean

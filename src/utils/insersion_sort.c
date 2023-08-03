@@ -6,7 +6,7 @@
 /*   By: htaheri <htaheri@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/17 20:11:27 by htaheri           #+#    #+#             */
-/*   Updated: 2023/07/25 14:54:14 by htaheri          ###   ########.fr       */
+/*   Updated: 2023/08/01 16:16:47 by htaheri          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int	*insertionsort(t_list **sa, int size)
 	{
 		key = array[step];
 		j = step - 1;
-		while (key < array[j] && j >= 0)
+		while (j >= 0 && key < array[j])
 		{
 			array[j + 1] = array[j];
 			j--;
